@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,32 +5,31 @@
 }
 
 html, body {
-    
     height: 100%;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: #121212; 
+    background-color: #121212;
+    transition: background-color 0.5s ease; /* Smooth background transition */
 }
-
 
 body {
-    
-    color: #f0f0f0; 
+    color: #f0f0f0;
     line-height: 1.6;
+    transition: color 0.5s ease; /* Smooth text color transition */
 }
-
 
 header {
     background: url(https://files.123freevectors.com/wp-content/original/202599-plain-white-background-design.jpg);
-    background-color: #1c1c1c; 
+    background-color: #1c1c1c;
     padding: 15px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
 }
 
 header nav a {
@@ -40,20 +38,24 @@ header nav a {
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.2s ease; /* Added transform transition */
 }
 
 header nav a:hover {
-    color: #d40000; 
+    color: #d40000;
+    transform: translateY(-3px); /* Slight lift on hover */
 }
 
-
 main {
-    padding: 120px 20px 20px; 
+    padding: 120px 20px 20px;
     flex-grow: 1;
     text-align: center;
+    margin-bottom: 30px;
+    transition: padding 0.3s ease; /* Smooth padding transition */
 }
 
 #hero {
+    
     background: url(https://static.vecteezy.com/system/resources/previews/019/011/154/large_2x/abstract-watercolor-paint-background-beautiful-blue-green-and-yellow-watercolor-splash-design-colorful-plain-green-tones-watercolor-textures-paper-textured-aquarelle-canvas-for-modern-creative-design-vector.jpg);
     background-size: cover;
     text-align: center;
@@ -62,22 +64,25 @@ main {
     position: relative;
     z-index: 1;
     border-radius: 10px;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4); 
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5); /* Slightly stronger inset shadow */
+    transition: padding 0.3s ease, box-shadow 0.3s ease;
 }
 
 #hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-    opacity: 1; 
-    transform: translateY(0); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 #hero p {
     font-size: 1.2rem;
     margin-bottom: 40px;
-    opacity: 1; 
-    transform: translateY(0); 
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 button {
@@ -88,13 +93,14 @@ button {
     border-radius: 200px;
     font-size: 1.1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Added box-shadow transition */
 }
 
 button:hover {
     background-color: #0097a7;
-    
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added shadow on hover */
 }
-
 
 footer {
     background-color: #1c1c1c;
@@ -102,17 +108,17 @@ footer {
     text-align: center;
     padding: 15px 20px;
     font-size: 0.9rem;
-    margin-top: auto; 
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
 }
 
 footer p {
     color: #bbb;
 }
 
-
 .hero-fade-in {
-    animation: none; 
+    animation: none;
 }
 
 @media (max-width: 768px) {
@@ -134,18 +140,15 @@ footer p {
     }
 }
 
-
 .schedule-session {
-    margin-bottom: 50px; 
-    padding: 30px; 
-    
-    
+    margin-bottom: 50px;
+    padding: 30px;
+    transition: padding 0.3s ease, margin-bottom 0.3s ease; /* Added margin-bottom transition */
 }
 
 .schedule-session:last-child {
     margin-bottom: 0;
 }
-
 
 #registration {
     text-align: left;
@@ -154,7 +157,8 @@ footer p {
     padding: 20px;
     background-color: #272626;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    transition: padding 0.3s ease, box-shadow 0.3s ease;
 }
 
 #registration label {
@@ -166,9 +170,15 @@ footer p {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #0a0303;
+    border: 1px solid #333; /* Slightly darker border */
     border-radius: 4px;
     box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#registration input:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 7px rgba(0, 229, 255, 0.7); /* Slightly stronger focus shadow */
 }
 
 #registration button {
@@ -178,9 +188,11 @@ footer p {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Added box-shadow transition */
 }
 
 #registration button:hover {
     background-color: #02f2ff;
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Added shadow on hover */
 }
-
