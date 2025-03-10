@@ -1,0 +1,110 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "Inception",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+      "rating": 8.8,
+      "image": "https://m.media-amazon.com/images/M/MV5BZGFjOTRiYjgtYjEzMS00ZjQ2LTkzY2YtOGQ0NDI2NTVjOGFmXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_FMjpg_UX1000_.jpg",
+      "reviews": {
+        "user": "user",
+        "comment": "really good"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Interstellar",
+      "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "rating": 8.6,
+      "image": "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2021/08/19085635/gEU2QniE6E77NI6lCU6MxlNBvIx-scaled.jpg",
+      "reviews": {
+        "user": "user",
+        "comment": "wdefwre"
+      }
+    },
+    {
+      "id": "3",
+      "title": "The Dark Knight",
+      "description": "Batman sets out to dismantle the remaining criminal organizations that plague Gotham.",
+      "rating": 9,
+      "image": "https://image.tmdb.org/t/p/original/a6KOgIPyVpGeXUVPqFKlM5nVfPy.jpg",
+      "reviews": {
+        "user": "qwde",
+        "comment": "qedwf"
+      }
+    },
+    {
+      "id": "4",
+      "title": "Titanic",
+      "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the Titanic.",
+      "rating": 7.9,
+      "image": "https://c8.alamy.com/comp/PXNB80/titanic-original-movie-poster-PXNB80.jpg",
+      "reviews": []
+    },
+    {
+      "id": "5",
+      "title": "The Matrix",
+      "description": "A computer hacker learns about the true nature of reality and his role in the war against its controllers.",
+      "rating": 8.7,
+      "image": "https://picfiles.alphacoders.com/385/thumb-1920-385304.jpg",
+      "reviews": []
+    },
+    {
+      "id": "6",
+      "title": "Avatar",
+      "description": "A paraplegic Marine is dispatched to the moon Pandora on a unique mission.",
+      "rating": 7.8,
+      "image": "https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_FMjpg_UX1000_.jpg",
+      "reviews": []
+    },
+    {
+      "id": "7",
+      "title": "Forrest Gump",
+      "description": "The presidencies of Kennedy and Johnson through the eyes of a man with a low IQ.",
+      "rating": 8.8,
+      "image": "https://image.tmdb.org/t/p/original/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
+      "reviews": []
+    },
+    {
+      "id": "8",
+      "title": "Gladiator",
+      "description": "A former Roman General seeks revenge against the corrupt emperor who murdered his family.",
+      "rating": 8.5,
+      "image": "https://image.tmdb.org/t/p/original/ofDw0himYNpehWA69OkPWOzXOYK.jpg",
+      "reviews": []
+    },
+    {
+      "id": "9",
+      "title": "The Shawshank Redemption",
+      "description": "Two imprisoned men bond over a number of years, finding solace and redemption.",
+      "rating": 9.3,
+      "image": "https://image.tmdb.org/t/p/original/lyQBXzOQSuE59IsHyhrp0qIiPAz.jpg",
+      "reviews": []
+    },
+    {
+      "id": "10",
+      "title": "The Godfather",
+      "description": "The aging patriarch of an organized crime dynasty transfers control to his reluctant son.",
+      "rating": 9.2,
+      "image": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
+      "reviews": []
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "password": "1234",
+      "id": "d0d5"
+    },
+    {
+      "username": "user1",
+      "password": "pass1",
+      "id": "6160"
+    },
+    {
+      "username": "user2",
+      "password": "pass2",
+      "id": "b66a"
+    }
+  ]
+}

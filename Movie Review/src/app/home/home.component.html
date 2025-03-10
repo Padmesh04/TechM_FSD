@@ -1,0 +1,40 @@
+<div class="container mt-5">
+  <!-- Welcome Message -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to the Movie Review System!</h1>
+    <p class="lead">
+      Your one-stop destination for exploring, reviewing, and discovering
+      amazing movies.
+    </p>
+    <hr class="my-4" />
+    <p>
+      Get started by browsing our collection of movies or adding your own
+      reviews.
+    </p>
+    <div class="mt-4">
+      <a class="btn btn-primary btn-lg mr-3" routerLink="/movies" role="button"
+        >Browse Movies</a
+      >
+    </div>
+  </div>
+
+  <!-- Featured Movies Section (Optional) -->
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <h2>Featured Movies</h2>
+      <p>Check out some of the most popular movies in our collection:</p>
+    </div>
+    <div class="col-md-4" *ngFor="let movie of featuredMovies">
+      <div class="card mb-4">
+        <img [src]="movie.image" class="card-img-top" [alt]="movie.title" />
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">{{ movie.description | truncate : 50 }}</p>
+          <a [routerLink]="['/movies', movie.id]" class="btn btn-primary"
+            >Details</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

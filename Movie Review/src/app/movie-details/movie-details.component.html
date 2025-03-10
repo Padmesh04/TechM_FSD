@@ -1,0 +1,28 @@
+<div class="container mt-4" *ngIf="movie">
+  <div class="row">
+    <div class="col-md-6">
+      <img [src]="movie.image" class="img-fluid" [alt]="movie.title" />
+    </div>
+    <div class="col-md-6">
+      <h2>{{ movie.title }}</h2>
+      <p>{{ movie.description }}</p>
+      <p><strong>Rating:</strong> {{ movie.rating }}</p>
+
+      <!-- Display Reviews -->
+      <h3 class="mt-4">Reviews</h3>
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let review of movie.reviews; let i = index"
+        >
+          <strong>{{ review.user }}:</strong> {{ review.comment }}
+        </li>
+      </ul>
+
+      <!-- Link to Add Review Page -->
+      <a [routerLink]="['/add-review', movie.id]" class="btn btn-success mt-3"
+        >Add Review</a
+      >
+    </div>
+  </div>
+</div>

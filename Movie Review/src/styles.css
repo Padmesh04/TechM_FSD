@@ -1,0 +1,22 @@
+body {
+  background: linear-gradient(135deg, #0d0d14, #1b1b2f);
+  color: #e0e0e0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background: #131722;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+a {
+  color: #4ea8de;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff6b6b;
+}

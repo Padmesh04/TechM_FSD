@@ -1,0 +1,38 @@
+<div class="container mt-4">
+  <!-- Search Bar and Filter Dropdown -->
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search movies..."
+        [(ngModel)]="searchText"
+      />
+    </div>
+    <div class="col-md-6">
+      <select class="form-control" [(ngModel)]="filterBy">
+        <option value="title">Filter by Title</option>
+        <option value="rating">Filter by Rating</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Movie Cards -->
+  <div class="row">
+    <div
+      class="col-md-4"
+      *ngFor="let movie of movies | filter : searchText : filterBy"
+    >
+      <div class="card">
+        <img [src]="movie.image" class="card-img-top" [alt]="movie.title" />
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">{{ movie.description | truncate : 50 }}</p>
+          <a [routerLink]="['/movies', movie.id]" class="btn btn-primary"
+            >Details</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
