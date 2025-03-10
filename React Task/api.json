@@ -1,0 +1,44 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "title": "React Basics",
+      "description": "Learn React from scratch"
+    },
+    {
+      "id": "2",
+      "title": "TypeScript Fundamentals",
+      "description": "Master TypeScript for scalable applications"
+    },
+    {
+      "id": "3",
+      "title": "Node.js Essentials",
+      "description": "Build robust backend applications with Node.js"
+    },
+    {
+      "id": "4",
+      "title": "Full-Stack Development",
+      "description": "Learn MERN stack for full-stack development"
+    },
+    {
+      "id": "5",
+      "title": "Data Structures & Algorithms",
+      "description": "Optimize your coding skills with DSA"
+    },
+    {
+      "id": "a315",
+      "title": "sdwd",
+      "description": "wdeq"
+    },
+    {
+      "id": "852f",
+      "title": "gh",
+      "description": "badf"
+    },
+    {
+      "id": "3b63",
+      "title": "web",
+      "description": "dwaesgrdt"
+    }
+  ]
+}
