@@ -1,0 +1,8 @@
+<div class="movie-card" (click)="onSelect()">
+  <img [src]="movie.imageUrl" [alt]="movie.title">
+  <div class="movie-info">
+    <h3>{{ movie.title }}</h3>
+    <p>{{ movie.rating | rating }}</p>
+    <p class="description">{{ movie.description | slice:0:100 }}...</p>
+  </div>
+</div>
